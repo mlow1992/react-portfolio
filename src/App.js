@@ -8,23 +8,32 @@ import Work from './components/Work';
 
 function App() {
 
+const [aboutSelected, setAboutSelected] = useState(true);
 const [contactSelected, setContactSelected] = useState(false);
+const [workSelected, setWorkSelected] = useState(false);
+const [resumeSelected, setResumeSelected] = useState(false);
 
   return (
     <div>
-      <Nav>
+      <Nav
+        aboutSelected={aboutSelected}
+        setAboutSelected={setAboutSelected}
         contactSelected={contactSelected}
         setContactSelected={setContactSelected}
-      </Nav>
+        workSelected={workSelected}
+        setWorkSelected={setWorkSelected}
+        resumeSelected={resumeSelected}
+        setResumeSelected={setResumeSelected}
+      ></Nav>
       <main>
-        {!contactSelected ? (
-          <About></About>
-        ) : (
-          <>
+        {contactSelected ? (
             <ContactForm></ContactForm>
+        ) : workSelected ? (
             <Work></Work>
+        ) : resumeSelected ? (
             <Resume></Resume>
-          </>
+        ) : (
+          <About></About>
         )}
       </main>
     </div>

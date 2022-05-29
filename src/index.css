@@ -12,14 +12,15 @@ code {
     monospace;
 }
 
-nav li {
-  cursor: pointer;
-}
-
-nav ul li{
+nav ul li {
   margin-right: 1rem;
   margin-left: 1rem;
   list-style: none;
+  cursor: pointer;
+}
+
+.card {
+  font-weight: bold;
 }
 
 .flex-row {
@@ -28,5 +29,6 @@ nav ul li{
 }
 
 .navActive {
-  color: red;
+  color: green;
+  font-weight: bold;
 }

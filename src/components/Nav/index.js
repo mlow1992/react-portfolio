@@ -2,8 +2,14 @@ import React from "react";
 
 function Nav(props) {
     const {
+        aboutSelected,
+        setAboutSelected,
         contactSelected,
-        setContactSelected
+        setContactSelected,
+        workSelected,
+        setWorkSelected,
+        resumeSelected,
+        setResumeSelected
     } = props;
 
     return (
@@ -13,19 +19,19 @@ function Nav(props) {
             </h2>
             <nav>
                 <ul className="flex-row">
-                    <li>
-                        <a href="#about" onClick={() => setContactSelected(false)}>
+                    <li className={`${aboutSelected && 'navActive'}`}>
+                        <span onClick={() => { setAboutSelected(true); setContactSelected(false); setWorkSelected(false); setResumeSelected(false)}}>
                             About me
-                        </a>
+                        </span>
                     </li>
-                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
-                        <span onClick={() => setContactSelected(true)}>Contact</span>
+                    <li className={`${contactSelected && 'navActive'}`}>
+                        <span onClick={() => { setAboutSelected(false); setContactSelected(true); setWorkSelected(false); setResumeSelected(false)}}>Contact</span>
                     </li>
-                    <li>
-                        Work
+                    <li className={`${workSelected && 'navActive'}`}>
+                        <span onClick={() => {setAboutSelected(false); setContactSelected(false); setWorkSelected(true); setResumeSelected(false)}}>Work</span>
                     </li>
-                    <li>
-                        Resume
+                    <li className={`${resumeSelected && 'navActive'}`}>
+                        <span onClick={() => { setAboutSelected(false); setContactSelected(false); setWorkSelected(false); setResumeSelected(true)}}>Resume</span>
                     </li>
                 </ul>
             </nav>
