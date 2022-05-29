@@ -5,6 +5,16 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: purple;
+  letter-spacing: .1em;
+}
+
+header {
+  background-color: black;
+}
+
+header h2 {
+  flex: 1
 }
 
 code {
@@ -12,15 +22,54 @@ code {
     monospace;
 }
 
+h2 {
+  color: white;
+}
+
 nav ul li {
   margin-right: 1rem;
   margin-left: 1rem;
   list-style: none;
   cursor: pointer;
+  color: white;
 }
 
-.card {
-  font-weight: bold;
+form {
+  width: 40%;
+}
+
+input {
+  font-size: 1rem;
+  padding: 0.25rem;
+  border: 1px solid var(--dark);
+  outline: none;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+textarea {
+	width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+}
+
+button {
+  background-color: green;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 15px;
+}
+
+.label {
+  width: 300px;
+}
+
+.cardTitle {
+  color: black;
 }
 
 .flex-row {

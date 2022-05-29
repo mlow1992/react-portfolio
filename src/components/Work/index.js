@@ -43,7 +43,7 @@ function Work() {
                         title="Budget App PWA"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
+                        <Typography gutterBottom variant="h5" component="h2" className="cardTitle">
                             Budget App
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
@@ -65,7 +65,7 @@ function Work() {
                         title="Septomeme"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
+                        <Typography gutterBottom variant="h5" component="h2" className="cardTitle">
                             Septomeme
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">

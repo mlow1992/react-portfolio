@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { validateEmail } from "../../utils/helpers";
 
+
 function ContactForm() {
 
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
@@ -38,9 +39,9 @@ function ContactForm() {
 
     return (
         <section>
-            <h1>Contact me</h1>
+            <h2>Contact me</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
-                <div>
+                <div className="label">
                     <label htmlFor="name">Name:</label>
                     <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
                 </div>
