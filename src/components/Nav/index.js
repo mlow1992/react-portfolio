@@ -1,6 +1,11 @@
 import React from "react";
 
-function Nav() {
+function Nav(props) {
+    const {
+        contactSelected,
+        setContactSelected
+    } = props;
+
     return (
         <header className="flex-row">
             <h2>
@@ -9,15 +14,18 @@ function Nav() {
             <nav>
                 <ul className="flex-row">
                     <li>
-                        <a href="#about">
+                        <a href="#about" onClick={() => setContactSelected(false)}>
                             About me
                         </a>
                     </li>
-                    <li>
-                        Contact
+                    <li className={`mx-2 ${contactSelected && 'navActive'}`}>
+                        <span onClick={() => setContactSelected(true)}>Contact</span>
                     </li>
                     <li>
                         Work
+                    </li>
+                    <li>
+                        Resume
                     </li>
                 </ul>
             </nav>
