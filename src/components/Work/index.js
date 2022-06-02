@@ -31,7 +31,7 @@ function Work() {
 
     return (
         <>
-        <h2>
+        <h2 className="w-h2">
             Below are pictures and links to various projects I have worked on. If any intrigue you, please explore further or feel free to contact me directly!
         </h2>
         <div className="flex-row">
@@ -87,7 +87,7 @@ function Work() {
                         title="Employee Directory"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
+                        <Typography gutterBottom variant="h5" component="h2" className="cardTitle">
                             Employee Directory
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
@@ -109,7 +109,7 @@ function Work() {
                         title="Social Media Backend"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
+                        <Typography gutterBottom variant="h5" component="h2" className="cardTitle">
                             Social Media Backend
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
@@ -131,7 +131,7 @@ function Work() {
                         title="E-commerce Backend"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
+                        <Typography gutterBottom variant="h5" component="h2" className="cardTitle">
                             E-Commerce Backend
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">
@@ -153,7 +153,7 @@ function Work() {
                         title="Book Search App"
                     />
                     <CardContent>
-                        <Typography gutterBottom variant="h5" component="h2">
+                        <Typography gutterBottom variant="h5" component="h2" className="cardTitle">
                             Book Search App Refactor
                         </Typography>
                         <Typography variant="body2" color="textSecondary" component="p">

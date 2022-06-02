@@ -38,7 +38,7 @@ function ContactForm() {
     }
 
     return (
-        <section>
+        <section className="form-section">
             <h2>Contact me</h2>
             <form id="contact-form" onSubmit={handleSubmit}>
                 <div className="label">
@@ -49,7 +49,7 @@ function ContactForm() {
                     <label htmlFor="email">Email address:</label>
                     <input type="email" name="email" defaultValue={email} onBlur={handleChange} />
                 </div>
-                <div>
+                <div className="label">
                     <label htmlFor="message">Message:</label>
                     <textarea name="message" defaultValue={message} rows="5" onBlur={handleChange} />
                 </div>

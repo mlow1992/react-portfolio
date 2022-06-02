@@ -25,7 +25,7 @@ const [resumeSelected, setResumeSelected] = useState(false);
         setWorkSelected={setWorkSelected}
         resumeSelected={resumeSelected}
         setResumeSelected={setResumeSelected}
-      ></Nav>
+      />
       <main>
         {contactSelected ? (
             <ContactForm></ContactForm>
