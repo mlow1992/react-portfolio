@@ -40,7 +40,7 @@ function ContactForm() {
     return (
         <section className="form-section">
             <h2>Contact me</h2>
-            <form id="contact-form" netlify onSubmit={handleSubmit}>
+            <form id="contact-form" onSubmit={handleSubmit} data-netlify="true">
                 <div className="label">
                     <label htmlFor="name">Name:</label>
                     <input type="text" name="name" defaultValue={name} onBlur={handleChange} />
